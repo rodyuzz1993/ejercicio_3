@@ -1,0 +1,875 @@
+body{
+    margin: 0;
+}
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav{
+    height: 80px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+header nav img{
+    height: 70px;
+    border-radius: 200px;
+}
+header nav img:hover{
+    transform: translateX(20px);
+    border-radius: 0px;
+    border-style:groove;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: 1s;
+}
+header nav .recuadro_izq{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 25px;
+    height: 80px;
+    padding-right: 283px;
+    background-color: orange;
+}
+header nav .recuadro_izq a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80px;
+    padding: 0px 10px;
+}
+
+header nav .recuadro_izq a:hover{
+    background-color: brown;
+    transition: 0.5s;
+}
+header nav .recuadro_der{
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 49, 49);
+}
+header nav .recuadro_der a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 25px;
+    background-color: orange;
+    border-radius: 13px;
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
+header nav .recuadro_der a:hover{
+    text-decoration: underline;
+}
+/*************************************************/
+main .financiamiento_ .recuadros{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+}
+main .financiamiento_ .image img{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+}
+/*************************************/
+main .financiamiento_ .calculador{
+    height: 280px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 60px 120px 0px 0px;
+}
+main .financiamiento_ .calculador #titulo{
+    font-size: 22px;
+    color: orangered;
+}
+main .financiamiento_ .calculador p{
+    font-size: 15px;
+    color: gray;
+}
+main .financiamiento_ .calculador button{
+    font-size: 15px;
+    color: white;
+    background-color: orange;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+main .financiamiento_ .calculador button:hover{
+    background-color: orangered;
+}
+main .financiamiento_ .calculador input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+/************************************************/
+main .financiamiento_ .quieroestudiar{
+    font-size: 20px;
+    height: 120px;
+    width: 350px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 120px 0px 0px;
+}
+main .financiamiento_ .quieroestudiar #fondo_mundo{
+    height: 40px;
+    width: 350px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+main .financiamiento_ .quieroestudiar #fondo_mexico{
+    height: 40px;
+    width: 350px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+main .financiamiento_ .quieroestudiar #fondo_mundo img{
+    height: 30px;
+    padding-right: 15px;
+    filter: invert(1);
+}
+main .financiamiento_ .quieroestudiar #fondo_mexico img{
+    height: 30px;
+    padding-right: 15px;
+    filter: invert(1);
+}
+main .financiamiento_ .quieroestudiar a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+}
+main .financiamiento_ .quieroestudiar a:hover{
+    text-decoration: underline;
+}
+/**********************************************/
+main .financiamiento_ .whatsapp{
+    font-size: 0px;
+    height: 40px;
+    width: 45px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 30px;
+    border-right: 5px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-style: solid;
+    z-index: 1;
+}
+main .financiamiento_ .whatsapp #logo_whatsapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+}
+main .financiamiento_ .whatsapp img{
+    height: 35px;
+    width: 35px;
+    padding-right: 10px;
+    filter: brightness(0.8);
+}
+main .financiamiento_ .whatsapp:hover{
+    transition:0.2s;
+    width: 280px;
+    border-color: orange;
+    color: white;
+    font-size: 18px;
+    box-shadow: yellow;
+    box-shadow: -6px 13px 10px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -6px 13px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 13px 10px -1px rgba(0,0,0,0.75);
+}
+main .financiamiento_ .whatsapp img:hover{
+    filter: brightness(1.5);
+    transform: scale(1.1);
+    transition:0.5s;
+}
+/*************************************************/
+main .proceso_simple .image_fondo_proceso{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+main .proceso_simple .image_fondo_proceso img{
+    height: 575px;
+    filter: brightness(0.8);
+    z-index: -1;
+    border-radius: 50px;
+}
+main .proceso_simple .barra_info{
+    height: 1300px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+main .proceso_simple .barra_info #titulo{
+    font-size: 40px;
+    padding: 0px 100px 0px 100px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+main .proceso_simple .barra_info #parrafo{
+    font-size: 20px;
+    padding: 0px 100px 10px 100px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+main .proceso_simple .barra_info a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(9, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight:700;
+}
+main .proceso_simple .barra_info a:hover{
+    background-color: rgb(15, 70, 70);
+    color: aliceblue;
+}
+/*Comienza animación 2*/
+main .proceso_simple .barra_info .animacion_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+/*CUADRO 1*/
+main .proceso_simple .barra_info .animacion_2 #cuadro_1{
+    height: 150px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 350px;
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgba(33,29,71,1) 0%, rgba(118,9,121,1) 35%, rgba(255,0,0,1) 100%);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 300px;
+    position: absolute;
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_1 img{
+    height: 75px;
+    filter: invert(0.5);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_1 img:hover{
+    height: 75px;
+    filter: invert(1);
+    transform:scale(1.2);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_1 a{
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    padding: 0px 50px 0px 50px;
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_1:hover{
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgb(224, 12, 12) 0%, rgba(118,9,121,1) 65%, rgb(19, 7, 131) 100%);
+}
+/*CUADRO 1*/
+/*CUADRO 2*/
+main .proceso_simple .barra_info .animacion_2 #cuadro_2{
+    height: 150px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 350px;
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgb(224, 12, 12) 0%, rgba(118,9,121,1) 65%, rgb(19, 7, 131) 100%);    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: -300px;
+    margin-top: 100px;
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_2 img{
+    height: 70px;
+    filter: invert(0.5);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_2 img:hover{
+    height: 75px;
+    filter: invert(1);
+    transform:scale(1.2);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_2 a{
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    padding: 0px 50px 0px 50px;
+}
+
+main .proceso_simple .barra_info .animacion_2 #cuadro_2:hover{
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgba(33,29,71,1) 0%, rgba(118,9,121,1) 35%, rgba(255,0,0,1) 100%);
+}
+/*CUADRO 2*/
+/*CUADRO 3*/
+main .proceso_simple .barra_info .animacion_2 #cuadro_3{
+    height: 150px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 350px;
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgba(33,29,71,1) 0%, rgba(118,9,121,1) 35%, rgba(255,0,0,1) 100%);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 300px;
+    position: absolute;
+    margin-top: 200px;
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_3 img{
+    height: 75px;
+    filter: invert(0.5);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_3 img:hover{
+    height: 75px;
+    filter: invert(1);
+    transform:scale(1.2);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_3 a{
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    padding: 0px 50px 0px 50px;
+}
+
+main .proceso_simple .barra_info .animacion_2 #cuadro_3:hover{
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgb(224, 12, 12) 0%, rgba(118,9,121,1) 65%, rgb(19, 7, 131) 100%);
+}
+/*CUADRO 3*/
+/*CUADRO 4*/
+main .proceso_simple .barra_info .animacion_2 #cuadro_4{
+    height: 150px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 350px;
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgb(224, 12, 12) 0%, rgba(118,9,121,1) 65%, rgb(19, 7, 131) 100%);    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: -300px;
+    margin-top: 50px;
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_4 img{
+    height: 75px;
+    filter: invert(0.5);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_4 img:hover{
+    height: 75px;
+    filter: invert(1);
+    transform:scale(1.2);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_4 a{
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    padding: 0px 50px 0px 50px;
+}
+
+main .proceso_simple .barra_info .animacion_2 #cuadro_4:hover{
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgba(33,29,71,1) 0%, rgba(118,9,121,1) 35%, rgba(255,0,0,1) 100%);
+}
+/*CUADRO 4*/
+/*CUADRO 5*/
+main .proceso_simple .barra_info .animacion_2 #cuadro_5{
+    height: 150px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 350px;
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgba(33,29,71,1) 0%, rgba(118,9,121,1) 35%, rgba(255,0,0,1) 100%);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 300px;
+    position: absolute;
+    margin-top: 400px;
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_5 img{
+    height: 75px;
+    filter: invert(0.5);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_5 img:hover{
+    height: 75px;
+    filter: invert(1);
+    transform:scale(1.2);
+}
+main .proceso_simple .barra_info .animacion_2 #cuadro_5 a{
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    padding: 0px 50px 0px 50px;
+}
+
+main .proceso_simple .barra_info .animacion_2 #cuadro_5:hover{
+    background: rgb(33,29,71);
+    background: linear-gradient(90deg, rgb(224, 12, 12) 0%, rgba(118,9,121,1) 65%, rgb(19, 7, 131) 100%);
+}
+/*CUADRO 5*/
+/*TERMINA animación 2*/
+main .cuadrofinan{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(200, 233, 150);
+    border-radius: 50px;
+    border-style:groove;
+    border-width: 12px;
+    border-color: yellow;
+}
+main .cuadrofinan:hover{
+    border-radius: 300px;
+    border-style:solid;
+    border-width: 30px;
+    border-color: yellow;
+    border-bottom-color: rgb(87, 129, 167);
+    border-top-color:rgb(87, 129, 167);
+    border-right-color: rgb(228, 99, 99);
+    border-left-color:rgb(228, 99, 99);
+    transition: 1s;
+}
+main .cuadrofinan #izqfinan{
+    width: 500px;
+}
+main .cuadrofinan #izqfinan h1{
+    color: rgb(184, 129, 28);
+}
+main .cuadrofinan #izqfinan h1:hover{
+    border-radius: 30px;
+    border-style:solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 5px;
+    color: rgb(189, 172, 142);
+    background-color: rgb(184, 129, 28);
+    text-align: center;
+    transition: 0.5s;
+    font-size: 30px;
+}
+main .cuadrofinan #izqfinan p{
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+}
+main .cuadrofinan #izqfinan p:hover{
+    color: rgb(104, 97, 97);
+    font-size: 22px;
+}
+main .cuadrofinan #izqfinan a{
+    color: rgb(104, 97, 97);
+    font-size: 18px;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px;
+    border-end-end-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .cuadrofinan #izqfinan a:hover{
+    transition: 1s;
+    color: rgb(233, 231, 231);
+    background-color: black;
+    border-end-end-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    padding: 25px;
+}
+main .cuadrofinan #derfinan a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 40px;
+}
+main .cuadrofinan #derfinan a:hover{
+    color: rgb(56, 105, 148);
+    font-size: 50px;
+    transition: 0.5s;
+    border-style:solid;
+    border-color:  rgb(144, 179, 209);
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(231, 142, 142);
+    border-width: 12px;
+}
+main .nuestro{
+    margin-top: 50px;
+}
+main .nuestro .nuesima{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+}
+main .nuestro img{
+    position: absolute;
+    border-radius: 50px;
+    height: 500px;
+    z-index: -1;
+    animation:linear infinite;
+}
+main .nuestro .letras{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 170px;
+    margin-left: 35%;
+    margin-right: 35%;
+    opacity: 0.7;
+    background-color: rgb(184, 198, 211);
+    padding: 0px 40px 0px 40px;
+}
+main .nuestro .letras:hover{
+    transition: 0.5s;
+    background-color: rgb(184, 198, 211);
+    opacity: 1;
+    padding-top: 40px;
+    height: 210px;
+    border-radius: 90px;
+    border-bottom-color: brown;
+    border-style:solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width: 12px;
+}
+main .nuestro .letras #titulomamalon{
+    font-size: 30px;
+    color: brown;
+}
+main .nuestro .letras #letreras{
+    color: white;
+}
+main .nuestro .letras #letreras:hover{
+    color: rgb(182, 11, 11);
+}
+main .nuestro .letras a{
+    text-decoration: none;
+    color: rgb(182, 11, 11);
+    padding: 5px;
+    background-color: rgb(233, 186, 99);
+    border-radius: 18px;
+}
+main .nuestro .letras a:hover{
+    color: rgb(236, 226, 226);
+    padding: 18px;
+    background-color: rgb(158, 105, 6);
+    border-radius: 28px;
+    font-weight: 800;
+}
+main .trabajamos{
+    height: 500px;
+    margin: 100px 5% 0% 5%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+main .trabajamos #trabaizq{
+    margin: 10px;
+    background-color: aqua;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    text-align:left;
+}
+main .trabajamos #trabaizq h1{
+    color: brown;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+}
+main .trabajamos #trabaizq p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main .trabajamos #trabaizq a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+main .trabajamos #trabaizq a:hover{
+    color: rgb(172, 135, 135);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(128, 31, 31);
+    padding: 8px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-left: 50px;
+}
+main .trabajamos #trabader{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+}
+main .trabajamos #trabader #trabaimg{
+    width: 506px;
+}
+
+main .trabajamos #trabader img{
+    animation-duration: 25s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, -87%, 0);
+    }
+  }
+  main .trabajamos #trabader img{
+    animation-duration: 25s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+}
+main .momento{
+    background-color: rgb(53, 53, 88);
+    height: 10em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 5em;
+    border-radius: 3em;
+    display: grid;
+}
+main .momento img{
+    height: 3em;
+    width: 3em;
+    margin-left: 30em;
+    margin-right: 30em;
+    filter: contrast(0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 40px;
+}
+main .momento img:hover{
+    transform: scale(1.3);
+    filter: contrast(1);
+    -webkit-box-shadow: inset 0px 0px 55px 0px rgba(202,224,227,1);
+-moz-box-shadow: inset 0px 0px 55px 0px rgba(202,224,227,1);
+box-shadow: inset 0px 0px 55px 0px rgba(202,224,227,1);
+}
+main .momento h1{
+    height: 1em;
+    width: 100%;
+    text-align: center;
+    filter: contrast(0.1);
+}
+main .momento h1:hover{
+    filter: contrast(1);
+    border-style:outset;
+    width: 50%;
+    margin-left: 10em;
+    border-radius: 30px;
+    color: rgb(171, 209, 100);
+    -webkit-box-shadow: 0px 0px 55px 0px rgb(154, 208, 221);
+    -moz-box-shadow: 0px 0px 55px 0px rgb(154, 208, 221);
+    box-shadow: 0px 0px 55px 0px rgb(154, 208, 221);
+}
+main .momento #links{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+main .momento #links a{
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+    padding: 0.5em;
+}
+main .momento #links a{
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(236, 157, 157);
+    padding: 0.5em;
+}
+main .momento #links a:hover{
+    color: rgb(171, 209, 100);
+    background-color: transparent;
+    border-style: outset;
+    border-radius: 20px;
+    font-size: larger;
+    -webkit-box-shadow: 0px 0px 55px 0px rgb(154, 208, 221);
+    -moz-box-shadow: 0px 0px 55px 0px rgb(154, 208, 221);
+    box-shadow: 0px 0px 55px 0px rgb(154, 208, 221);
+}
+main .contacto{
+    margin: 3em 3em 0em 3em;
+    height: auto;
+    width: auto;
+    background-color: rgb(224, 173, 136);
+    border-radius: 3em;
+    border-style:inset;
+    border-width: 4em;
+    border-color: chocolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .contacto:hover{
+    transition: 1s;
+    -webkit-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    -moz-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    box-shadow: inset 0px 0px 500px 0px rgb(105, 37, 33);
+}
+main .contacto .izqg{
+    -webkit-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    -moz-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    box-shadow: inset 0px 0px 50px 0px rgb(224, 121, 115);
+    width: auto;
+    padding: 2em;
+}
+main .contacto .centg{
+    -webkit-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    -moz-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    box-shadow: inset 0px 0px 50px 0px rgb(224, 121, 115);
+    width: auto;
+    padding: 2em;
+}
+main .contacto .derg{
+    -webkit-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    -moz-box-shadow: inset 0px 0px 500px 0px rgb(170, 90, 84);
+    box-shadow: inset 0px 0px 50px 0px rgb(224, 121, 115);
+    width: auto;
+    padding: 2em;
+}
+main .contacto h1{
+    color: rgb(197, 83, 16);
+    background-color: antiquewhite;
+    text-align: center;
+    border-style: ridge;
+    border-color: brown;
+    border-radius: 2em;
+}
+main .contacto h1:hover{
+    color: rgb(228, 209, 198);
+    background-color: rgb(233, 102, 102);
+}
+main .contacto a{
+    text-decoration: none;
+    color: rgb(197, 83, 16);
+}
+main .contacto a:hover{
+    color: rgb(97, 38, 8);
+    font-size: large;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgb(170, 90, 84);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgb(170, 90, 84);
+    box-shadow: inset 0px 0px 5px 0px rgb(90, 19, 15);
+    border-radius: 2em;
+}
+footer{
+    background-color: gray;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size:smaller;
+}
+footer p{
+    width: 30em;
+    text-align: center;
+}
